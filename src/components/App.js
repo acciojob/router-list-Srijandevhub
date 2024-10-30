@@ -9,12 +9,10 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <BrowserRouter>
           <Routes>
             <Route path="/" element={<ItemList />}/>
-            <Route path="/items/:id" element={<ItemDetail />}/>
+            <Route path="/itemdetail/:id" element={<ItemDetail />}/>
           </Routes>
-        </BrowserRouter>
     </div>
   )
 }
